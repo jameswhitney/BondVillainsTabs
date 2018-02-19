@@ -65,7 +65,7 @@
         <!--Villain Collection View Controller-->
         <scene sceneID="Po5-tw-XA4">
             <objects>
-                <collectionViewController id="5TK-eL-5vI" userLabel="Villain Collection View Controller" sceneMemberID="viewController">
+                <collectionViewController id="5TK-eL-5vI" userLabel="Villain Collection View Controller" customClass="VillainCollectionViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="izo-tc-dLV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
