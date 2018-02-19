@@ -77,7 +77,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4gg-az-RfU">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4gg-az-RfU" customClass="VillainCollectionViewCell" customModule="BondVillains" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="107" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -105,6 +105,10 @@
                                     <constraint firstAttribute="bottomMargin" secondItem="KDY-I0-pOf" secondAttribute="bottom" constant="9" id="VoH-gG-QVQ"/>
                                     <constraint firstItem="KDY-I0-pOf" firstAttribute="centerX" secondItem="bmv-Ih-886" secondAttribute="centerX" id="jM9-n3-BHB"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="villainImageView" destination="KDY-I0-pOf" id="lM9-YK-548"/>
+                                    <outlet property="villainName" destination="bmv-Ih-886" id="qla-7R-U9J"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
