@@ -13,7 +13,7 @@ class VillainCollectionViewController: UICollectionViewController {
     
     // MARK: Properties
     
-    let Villains = Villain.allVillains
+    let villainsCollection = Villain.allVillains
     
     // MARK: Life Cycle
     
@@ -21,5 +21,11 @@ class VillainCollectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.isHidden = false
         
+    }
+    
+    // MARK: Collection View Data Source
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.villainsCollection.count
     }
 }
