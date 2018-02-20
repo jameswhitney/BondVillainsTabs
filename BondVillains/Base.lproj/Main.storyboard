@@ -71,27 +71,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fDJ-6A-HF0">
-                            <size key="itemSize" width="107" height="121"/>
+                            <size key="itemSize" width="129" height="160"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VillainCollectionViewCell" id="4gg-az-RfU" customClass="VillainCollectionViewCell" customModule="BondVillains" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="107" height="121"/>
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="107" height="121"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="129" height="160"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KDY-I0-pOf">
-                                            <rect key="frame" x="-1" y="30" width="109" height="74"/>
+                                            <rect key="frame" x="0.0" y="48" width="131" height="74"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="74" id="dwr-Xo-MA0"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-Ih-886">
-                                            <rect key="frame" x="32" y="2" width="42" height="21"/>
+                                            <rect key="frame" x="43" y="19" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEd-Ip-Zqy" userLabel="Villain Scheme">
+                                            <rect key="frame" x="43" y="130" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -99,13 +105,17 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="centerX" secondItem="4gg-az-RfU" secondAttribute="centerX" id="CE3-qs-UAj"/>
-                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="leading" secondItem="4gg-az-RfU" secondAttribute="leadingMargin" constant="-9" id="F9p-85-xAz"/>
-                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="top" secondItem="bmv-Ih-886" secondAttribute="bottom" constant="7" id="NvN-sF-3ae"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="KDY-I0-pOf" secondAttribute="bottom" constant="9" id="VoH-gG-QVQ"/>
-                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="centerX" secondItem="bmv-Ih-886" secondAttribute="centerX" id="jM9-n3-BHB"/>
+                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="centerX" secondItem="4gg-az-RfU" secondAttribute="centerX" constant="1" id="CE3-qs-UAj"/>
+                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="leading" secondItem="4gg-az-RfU" secondAttribute="leadingMargin" constant="-8" id="F9p-85-xAz"/>
+                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="top" secondItem="bmv-Ih-886" secondAttribute="bottom" constant="8" id="NvN-sF-3ae"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="KDY-I0-pOf" secondAttribute="bottom" constant="30" id="VoH-gG-QVQ"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WEd-Ip-Zqy" secondAttribute="trailing" symbolic="YES" id="bwY-eG-7ma"/>
+                                    <constraint firstItem="WEd-Ip-Zqy" firstAttribute="top" secondItem="KDY-I0-pOf" secondAttribute="bottom" constant="8" id="iy0-Ls-RUV"/>
+                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="centerX" secondItem="bmv-Ih-886" secondAttribute="centerX" constant="1.5" id="jM9-n3-BHB"/>
+                                    <constraint firstItem="WEd-Ip-Zqy" firstAttribute="leading" secondItem="bmv-Ih-886" secondAttribute="leading" id="wNc-gq-ZXq"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="schemeLabel" destination="WEd-Ip-Zqy" id="NPK-3w-oh6"/>
                                     <outlet property="villainImageView" destination="KDY-I0-pOf" id="lM9-YK-548"/>
                                     <outlet property="villainName" destination="bmv-Ih-886" id="qla-7R-U9J"/>
                                 </connections>
@@ -120,7 +130,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yb-Fi-Cod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287" y="-1588"/>
+            <point key="canvasLocation" x="286.5" y="-1588.5"/>
         </scene>
         <!--Villains-->
         <scene sceneID="ufC-wZ-h7g">

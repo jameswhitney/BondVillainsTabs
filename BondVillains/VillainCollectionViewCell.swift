@@ -14,5 +14,5 @@ class VillainCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var villainImageView: UIImageView!
     @IBOutlet weak var villainName: UILabel!
-    
+    @IBOutlet weak var schemeLabel: UILabel!
 }
