@@ -19,13 +19,14 @@ class VillainDetailViewController: UIViewController {
     // MARK: Outlets
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    
+    @IBOutlet weak var villainLabel: UILabel!
+    @IBOutlet weak var villainScheme: UILabel!
     // MARK: Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.label.text = self.villain.name
+        self.villainLabel.text = self.villain.name
+        self.villainScheme.text = self.villain.evilScheme
         self.tabBarController?.tabBar.isHidden = true
         self.imageView!.image = UIImage(named: villain.imageName)
     }

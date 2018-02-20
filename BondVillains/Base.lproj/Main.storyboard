@@ -84,43 +84,43 @@
                                     <rect key="frame" x="0.0" y="0.0" width="177" height="149"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KDY-I0-pOf">
-                                            <rect key="frame" x="40" y="34" width="124" height="80"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-Ih-886">
-                                            <rect key="frame" x="20" y="0.0" width="157" height="35"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-Ih-886">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="35"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="UP5-8z-Mvn"/>
+                                                <constraint firstAttribute="height" constant="35" id="m8H-Gu-C1X"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WEd-Ip-Zqy" userLabel="Villain Scheme">
-                                            <rect key="frame" x="20" y="113" width="157" height="36"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WEd-Ip-Zqy" userLabel="Villain Scheme">
+                                            <rect key="frame" x="0.0" y="113" width="177" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KDY-I0-pOf">
+                                            <rect key="frame" x="48" y="43" width="80" height="62"/>
+                                        </imageView>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="bmv-Ih-886" firstAttribute="trailing" secondItem="WEd-Ip-Zqy" secondAttribute="trailing" id="D5H-4Q-rG7"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="KDY-I0-pOf" secondAttribute="trailing" constant="5" id="Fk6-8Q-hbb"/>
-                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="centerY" secondItem="4gg-az-RfU" secondAttribute="centerY" id="LUW-ap-mgx"/>
-                                    <constraint firstAttribute="trailing" secondItem="bmv-Ih-886" secondAttribute="trailing" id="NJ3-Kr-mcT"/>
-                                    <constraint firstItem="bmv-Ih-886" firstAttribute="top" secondItem="4gg-az-RfU" secondAttribute="top" id="Nlr-ed-Pok"/>
-                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="top" secondItem="4gg-az-RfU" secondAttribute="topMargin" constant="26" id="OCa-sZ-i4G"/>
-                                    <constraint firstItem="bmv-Ih-886" firstAttribute="leading" secondItem="WEd-Ip-Zqy" secondAttribute="leading" id="Qf6-MH-KxB"/>
-                                    <constraint firstAttribute="bottom" secondItem="WEd-Ip-Zqy" secondAttribute="bottom" id="W6g-vX-fIK"/>
-                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="leading" secondItem="4gg-az-RfU" secondAttribute="leadingMargin" constant="32" id="l64-Km-b4D"/>
-                                    <constraint firstItem="bmv-Ih-886" firstAttribute="leading" secondItem="4gg-az-RfU" secondAttribute="leadingMargin" constant="12" id="uNZ-UD-bQL"/>
-                                    <constraint firstItem="WEd-Ip-Zqy" firstAttribute="top" secondItem="bmv-Ih-886" secondAttribute="bottom" constant="78" id="zrT-Rk-BWt"/>
+                                    <constraint firstItem="bmv-Ih-886" firstAttribute="leading" secondItem="WEd-Ip-Zqy" secondAttribute="leading" id="8ot-me-Zb1"/>
+                                    <constraint firstItem="WEd-Ip-Zqy" firstAttribute="top" secondItem="bmv-Ih-886" secondAttribute="bottom" constant="78" id="90w-T7-UKE"/>
+                                    <constraint firstItem="bmv-Ih-886" firstAttribute="trailing" secondItem="WEd-Ip-Zqy" secondAttribute="trailing" id="Cdv-mJ-dXT"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="KDY-I0-pOf" secondAttribute="trailing" constant="41" id="V5I-3c-yOa"/>
+                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="top" secondItem="4gg-az-RfU" secondAttribute="topMargin" constant="35" id="Vne-CM-1hu"/>
+                                    <constraint firstItem="bmv-Ih-886" firstAttribute="top" secondItem="4gg-az-RfU" secondAttribute="top" id="ccY-BG-wiO"/>
+                                    <constraint firstAttribute="trailing" secondItem="bmv-Ih-886" secondAttribute="trailing" id="dYT-gh-bMh"/>
+                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="leading" secondItem="4gg-az-RfU" secondAttribute="leadingMargin" constant="40" id="dsr-2x-wvA"/>
+                                    <constraint firstItem="bmv-Ih-886" firstAttribute="leading" secondItem="4gg-az-RfU" secondAttribute="leading" id="glH-Hu-Ndv"/>
+                                    <constraint firstAttribute="bottom" secondItem="WEd-Ip-Zqy" secondAttribute="bottom" id="piy-Js-uf6"/>
+                                    <constraint firstItem="KDY-I0-pOf" firstAttribute="centerY" secondItem="4gg-az-RfU" secondAttribute="centerY" id="sn0-eR-kSy"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="schemeLabel" destination="WEd-Ip-Zqy" id="NPK-3w-oh6"/>
+                                    <outlet property="schemeLabel" destination="WEd-Ip-Zqy" id="yeq-WY-a08"/>
                                     <outlet property="villainImageView" destination="KDY-I0-pOf" id="lM9-YK-548"/>
-                                    <outlet property="villainName" destination="bmv-Ih-886" id="qla-7R-U9J"/>
+                                    <outlet property="villainName" destination="bmv-Ih-886" id="VXG-l1-tU6"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -215,7 +215,7 @@
                                     <constraint firstAttribute="width" constant="120" id="w7B-gz-6qd"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lh-aP-RLK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Lh-aP-RLK">
                                 <rect key="frame" x="166" y="254" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -243,7 +243,8 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="FDo-XX-WHk" id="X0Y-nd-xWC"/>
-                        <outlet property="label" destination="mtr-bJ-yVV" id="d2G-fU-FBa"/>
+                        <outlet property="villainLabel" destination="mtr-bJ-yVV" id="4h5-MX-2WM"/>
+                        <outlet property="villainScheme" destination="5Lh-aP-RLK" id="yhc-jX-LBD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xte-Jb-h1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
