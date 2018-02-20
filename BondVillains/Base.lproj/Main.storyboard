@@ -65,7 +65,7 @@
         <!--Villain Collection View Controller-->
         <scene sceneID="Po5-tw-XA4">
             <objects>
-                <collectionViewController id="5TK-eL-5vI" userLabel="Villain Collection View Controller" customClass="VillainCollectionViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Villains" id="5TK-eL-5vI" userLabel="Villain Collection View Controller" customClass="VillainCollectionViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="izo-tc-dLV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="287" y="-829"/>
         </scene>
-        <!--VillainDetailViewController-->
+        <!--Villain Detail View Controller-->
         <scene sceneID="doP-D7-ZxX">
             <objects>
-                <viewController storyboardIdentifier="VillainDetailViewController" title="VillainDetailViewController" id="0Sq-k5-m3Z" customClass="VillainDetailViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VillainDetailViewController" id="0Sq-k5-m3Z" customClass="VillainDetailViewController" customModule="BondVillains" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LWf-0n-fPw"/>
                         <viewControllerLayoutGuide type="bottom" id="rOZ-A7-WWs"/>
@@ -208,48 +208,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDo-XX-WHk">
-                                <rect key="frame" x="128" y="284" width="120" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDo-XX-WHk">
+                                <rect key="frame" x="127" y="238" width="120" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="FMn-Rb-mu2"/>
-                                    <constraint firstAttribute="width" constant="120" id="w7B-gz-6qd"/>
+                                    <constraint firstAttribute="width" constant="120" id="hPZ-3K-vR9"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Lh-aP-RLK">
-                                <rect key="frame" x="166" y="254" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtr-bJ-yVV">
+                                <rect key="frame" x="16" y="191" width="343" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="uz7-ZQ-efO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtr-bJ-yVV">
-                                <rect key="frame" x="166" y="391" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Lh-aP-RLK">
+                                <rect key="frame" x="16" y="366" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="FZo-d0-tpb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="leading" secondItem="5Lh-aP-RLK" secondAttribute="leading" id="6Ke-tt-hf3"/>
-                            <constraint firstAttribute="centerY" secondItem="FDo-XX-WHk" secondAttribute="centerY" id="6dq-PG-sV4"/>
-                            <constraint firstAttribute="centerX" secondItem="FDo-XX-WHk" secondAttribute="centerX" id="AG0-IF-K7N"/>
-                            <constraint firstAttribute="centerX" secondItem="FDo-XX-WHk" secondAttribute="centerX" id="Q5K-ov-zoY"/>
-                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="centerX" secondItem="WRP-TS-v5n" secondAttribute="centerX" id="Zem-61-qfT"/>
-                            <constraint firstItem="FDo-XX-WHk" firstAttribute="top" secondItem="5Lh-aP-RLK" secondAttribute="bottom" constant="9" id="fwz-TF-lrc"/>
-                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="top" secondItem="FDo-XX-WHk" secondAttribute="bottom" constant="7" id="mtZ-AQ-tH5"/>
-                            <constraint firstAttribute="centerY" secondItem="FDo-XX-WHk" secondAttribute="centerY" id="myX-Cf-lDm"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Lh-aP-RLK" secondAttribute="trailing" constant="20" symbolic="YES" id="ntY-Fz-I9k"/>
+                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="top" secondItem="LWf-0n-fPw" secondAttribute="bottom" constant="171" id="AuT-JL-0A5"/>
+                            <constraint firstItem="5Lh-aP-RLK" firstAttribute="top" secondItem="FDo-XX-WHk" secondAttribute="bottom" constant="28" id="I7m-S2-bk7"/>
+                            <constraint firstItem="rOZ-A7-WWs" firstAttribute="top" secondItem="5Lh-aP-RLK" secondAttribute="bottom" constant="277" id="LiW-yR-FFa"/>
+                            <constraint firstItem="FDo-XX-WHk" firstAttribute="top" secondItem="mtr-bJ-yVV" secondAttribute="bottom" constant="24" id="PEA-Am-ICv"/>
+                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="leading" secondItem="WRP-TS-v5n" secondAttribute="leadingMargin" id="eX5-6a-VTg"/>
+                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="trailing" secondItem="WRP-TS-v5n" secondAttribute="trailingMargin" id="gal-jS-gIM"/>
+                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="centerX" secondItem="FDo-XX-WHk" secondAttribute="centerX" id="hmH-Vh-YGo"/>
+                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Lh-aP-RLK" secondAttribute="leading" id="lYO-XX-z8a"/>
+                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="trailing" secondItem="5Lh-aP-RLK" secondAttribute="trailing" id="uv4-nI-CU2"/>
+                            <constraint firstItem="mtr-bJ-yVV" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Lh-aP-RLK" secondAttribute="trailing" id="wPw-9f-8jx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="FDo-XX-WHk" id="X0Y-nd-xWC"/>
-                        <outlet property="villainLabel" destination="mtr-bJ-yVV" id="4h5-MX-2WM"/>
+                        <outlet property="villainLabel" destination="mtr-bJ-yVV" id="IPX-l7-50R"/>
                         <outlet property="villainScheme" destination="5Lh-aP-RLK" id="yhc-jX-LBD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xte-Jb-h1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="-830"/>
+            <point key="canvasLocation" x="785.5" y="-830.5"/>
         </scene>
     </scenes>
 </document>
